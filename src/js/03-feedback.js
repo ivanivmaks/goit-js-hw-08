@@ -28,7 +28,7 @@ function loadPage() {
 
 window.addEventListener('load', loadPage);
 
-function handleSubmit(event) {
+function submitForm(event) {
   event.preventDefault();
   const formData = {
     email: formEmail.value,
@@ -39,4 +39,5 @@ function handleSubmit(event) {
   formMessage.value = '';
   console.log(formData);
 }
-form.addEventListener('submit', handleSubmit);
+
+form.addEventListener('submit', submitForm);
